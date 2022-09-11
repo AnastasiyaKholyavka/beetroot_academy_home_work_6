@@ -11,17 +11,16 @@ and store them in a separate list. Finally, print the list.
 Constraint: use only while loop for iteration
 
 '''
-'''
-Псевдокод:
-    1. Створюємо список
-    2. Знайти всі числа, які діляться на 7
-    Для цього потрібно могти викликати для перевірки кожне число. 
-    Як називати кожне чило?
-    Чи можна задати щось як "х" у рівнянні?
-    3. Якщо х ділиться на 7 і не кратне 5, то внести х у новий список.
-    
-'''
-# Не можу виконати
+# Змогла зробити тільки після пояснення на уроці :(
 
-numbers = list(range(1, 101))
-new_numbers = list(numbers.sort( // 7) and numbers.sort( % 5))
+first_list = list(range(1,101))
+second_list = []
+
+i = 1 
+
+while i < len(first_list):
+    if first_list[i] % 7 == 0 and first_list[i] % 5 != 0:
+        second_list.append(first_list[i])
+    i += 1
+
+print(second_list)
